@@ -1,0 +1,13 @@
+per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
+a = round(per_cent["ТКБ"] * 365, 2)
+b = round(per_cent["СКБ"] * 365, 2)
+c = round(per_cent["ВТБ"] * 365, 2)
+d = round(per_cent["СБЕР"] * 365, 2)
+money = int(input("money:"))
+#money = int(money)
+TKB = a * money
+CKB = b * money
+VTB = c * money
+SBER = d * money
+print("deposit =",sorted([TKB,CKB,VTB,SBER]))
+print("Максимальная сумма, которую вы можете заработать-deposit[i] =",max(TKB,CKB,VTB,SBER))
