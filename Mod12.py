@@ -4,7 +4,6 @@ b = round(per_cent["СКБ"] * 365, 2)
 c = round(per_cent["ВТБ"] * 365, 2)
 d = round(per_cent["СБЕР"] * 365, 2)
 money = int(input("money:"))
-#money = int(money)
 TKB = a * money
 CKB = b * money
 VTB = c * money
